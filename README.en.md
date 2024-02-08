@@ -11,7 +11,7 @@
 <p align='center'>
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/number201724/PalServerHostFix?style=for-the-badge">&nbsp;&nbsp;
 </p>
-###### NOTE: The archives run on the server using this launcher can be put back into a single-player for use.！
+###### NOTE: The saved run on the server using this launcher can be put back into a single-player for use.！
 
 
 ## Installation
