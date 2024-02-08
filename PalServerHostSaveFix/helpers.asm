@@ -1,0 +1,47 @@
+
+ 
+
+EXTERN g_pfnAfterPatchSocialId:QWORD
+EXTERN AfterPatchSocialId:PROC
+
+.code
+
+AsmAfterPatchSocialId proc
+	PUSH RAX
+	PUSH RBX
+	PUSH RCX
+	PUSH RDX
+	PUSH RBP
+	PUSH RSI
+	PUSH RDI
+	PUSH R8
+	PUSH R9
+	PUSH R10
+	PUSH R11
+	PUSH R12
+	PUSH R13
+	PUSH R14
+	PUSH R15
+
+	CALL AfterPatchSocialId
+	POP R15
+	POP R14
+	POP R13
+	POP R12
+	POP R11
+	POP R10
+	POP R9
+	POP R8
+	POP RDI
+	POP RSI
+	POP RBP
+	POP RDX
+	POP RCX
+	POP RBX
+	POP RAX
+
+	JMP g_pfnAfterPatchSocialId
+AsmAfterPatchSocialId endp
+
+
+END
