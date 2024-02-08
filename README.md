@@ -11,6 +11,8 @@
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/number201724/PalServerHostFix?style=for-the-badge">&nbsp;&nbsp;
 </p>
 
+###### NOTE: 使用本启动器在服务器运行的存档可以在将来放回单机继续玩！
+
 ## 安装部署
 
 1. 使用SteamCMD更新PalServer
