@@ -19,7 +19,7 @@
    steamcmd.exe +force_install_dir C:\PalServer +login anonymous +app_update 2394010 validate +quit
    ```
 
-2. 下载单机存档修复工具并解压到PalServer目录 
+2. 下载专用服务器修复工具并解压到PalServer目录 
 
 3. 复制本地PalWorld的存档到服务器的存档目录下，并且记住SteamId和Hash，等下要用
 

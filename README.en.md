@@ -1,4 +1,4 @@
-<h1 align='center'>幻兽帕鲁单机存档转专用服务器修复工具</h1>
+<h1 align='center'>PalWorld single-player saved to dedicated server fix tool</h1>
 
 <p align="center">
    <a href="/README.md">简体中文</a> | <strong>English</strong>
