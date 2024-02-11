@@ -44,7 +44,15 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLin
 	uint64_t steamid;
 	USES_CONVERSION;
 
-	GetCurrentDirectoryW( MAX_PATH, strCurDir.GetBuffer( MAX_PATH ) );
+	LPWSTR lpszCurDir = strCurDir.GetBuffer( MAX_PATH );
+
+	GetModuleFileNameW( (HMODULE)hInstance, lpszCurDir, MAX_PATH );
+
+	LPWSTR lpTemp = wcsrchr( lpszCurDir, L'\\' );
+	if ( lpTemp ) {
+		*lpTemp = L'\0';
+	}
+
 	strCurDir.ReleaseBuffer();
 
 	strDllFileName.Format( L"%s%s", strCurDir, L"\\PalHost.dll" );
