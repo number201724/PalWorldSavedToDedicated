@@ -144,5 +144,7 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLin
 
 	strCommandLine.ReleaseBuffer();
 
+	WaitForSingleObject( pi.hProcess, INFINITE );
+
 	return 0;
 }
