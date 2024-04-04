@@ -78,10 +78,10 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLin
 	}
 
 	strExecDir.Format( L"%s%s", strCurDir, L"\\Pal\\Binaries\\Win64" );
-	strExePath.Format( L"%s\\%s", strExecDir, L"PalServer-Win64-Test-Cmd.exe" );
+	strExePath.Format( L"%s\\%s", strExecDir, L"PalServer-Win64-Shipping-Cmd.exe" );
 
 	if ( !PathFileExistsW( strExePath ) ) {
-		strExePath.Format( L"%s\\%s", strExecDir, L"PalServer-Win64-Test.exe" );
+		strExePath.Format( L"%s\\%s", strExecDir, L"PalServer-Win64-Shipping.exe" );
 	}
 
 	if ( !PathFileExistsW( strExePath ) ) {
@@ -100,7 +100,7 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLin
 	{
 		LPWSTR lpTemp = wcschr( lpCommandLine + 1, '\"' );
 
-		if ( !lpTemp ) 
+		if ( !lpTemp )
 		{
 			MessageBoxW( NULL, L"unknown error 1.", CAPTION_TEXT, MB_ICONERROR );
 			ExitProcess( 0 );
